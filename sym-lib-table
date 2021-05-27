@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name BreadboardController-rescue)(type Legacy)(uri ${KIPRJMOD}/BreadboardController-rescue.lib)(options "")(descr ""))
+  (lib (name BreadboardController)(type Legacy)(uri ${KIPRJMOD}/BreadboardController.lib)(options "")(descr ""))
+)

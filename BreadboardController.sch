@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Breadboard Controller"
+Date "2020-08-24"
+Rev "2.0"
+Comp "https://github.com/KimiakiK"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BreadboardController:AnalogJoyStick RV1
+U 1 1 5E984B36
+P 5500 3950
+F 0 "RV1" H 5500 4100 50  0000 C CNN
+F 1 "AnalogJoyStick" H 5350 3650 50  0000 C CNN
+F 2 "BreadboardController:AnalogJoyStick" H 5500 4150 50  0001 C CNN
+F 3 "" H 5500 4150 50  0001 C CNN
+	1    5500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E98A55C
+P 5700 4250
+F 0 "#PWR03" H 5700 4000 50  0001 C CNN
+F 1 "GND" H 5705 4077 50  0000 C CNN
+F 2 "" H 5700 4250 50  0001 C CNN
+F 3 "" H 5700 4250 50  0001 C CNN
+	1    5700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E99096D
+P 5500 3400
+F 0 "#PWR02" H 5500 3150 50  0001 C CNN
+F 1 "GND" H 5505 3227 50  0000 C CNN
+F 2 "" H 5500 3400 50  0001 C CNN
+F 3 "" H 5500 3400 50  0001 C CNN
+	1    5500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3400 6200 3500
+Wire Wire Line
+	6100 3400 6100 3750
+Wire Wire Line
+	6000 3400 6000 4000
+Wire Wire Line
+	5900 3400 5900 4250
+Wire Wire Line
+	5800 3400 5800 4050
+Wire Wire Line
+	5800 4050 5500 4050
+Wire Wire Line
+	5700 3400 5700 3850
+Wire Wire Line
+	5700 3850 5500 3850
+Wire Wire Line
+	5600 4150 5700 4150
+Wire Wire Line
+	5700 4150 5700 4250
+Wire Wire Line
+	5600 3950 5700 3950
+Wire Wire Line
+	5700 3950 5700 4150
+Connection ~ 5700 4150
+Wire Wire Line
+	5600 3400 5600 3650
+Wire Wire Line
+	5600 3650 5300 3650
+Wire Wire Line
+	5300 3650 5300 3950
+Wire Wire Line
+	5300 3950 5400 3950
+Wire Wire Line
+	5400 4150 5300 4150
+Wire Wire Line
+	5300 4150 5300 3950
+Connection ~ 5300 3950
+Wire Wire Line
+	5300 3300 5300 3650
+Connection ~ 5300 3650
+Text Label 5700 3450 3    50   ~ 0
+RV1
+Text Label 5800 3450 3    50   ~ 0
+RV2
+$Comp
+L Connector:Conn_01x08_Female J1
+U 1 1 5E9861CB
+P 5800 3200
+F 0 "J1" V 5850 3150 50  0000 C CNN
+F 1 "Connector" V 5850 2850 50  0000 C CNN
+F 2 "BreadboardController:Connecter_SMD_8pin" H 5800 3200 50  0001 C CNN
+F 3 "~" H 5800 3200 50  0001 C CNN
+	1    5800 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E98AA4F
+P 6500 3500
+F 0 "SW1" H 6500 3650 50  0000 C CNN
+F 1 "SW_Push" H 6500 3694 50  0001 C CNN
+F 2 "BreadboardController:SW_SMD" H 6500 3700 50  0001 C CNN
+F 3 "~" H 6500 3700 50  0001 C CNN
+	1    6500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E98B059
+P 6500 3750
+F 0 "SW2" H 6500 3900 50  0000 C CNN
+F 1 "SW_Push" H 6500 3944 50  0001 C CNN
+F 2 "BreadboardController:SW_SMD" H 6500 3950 50  0001 C CNN
+F 3 "~" H 6500 3950 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E98D870
+P 6500 4000
+F 0 "SW3" H 6500 4150 50  0000 C CNN
+F 1 "SW_Push" H 6500 4194 50  0001 C CNN
+F 2 "BreadboardController:SW_SMD" H 6500 4200 50  0001 C CNN
+F 3 "~" H 6500 4200 50  0001 C CNN
+	1    6500 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E98DE77
+P 6500 4250
+F 0 "SW4" H 6500 4400 50  0000 C CNN
+F 1 "SW_Push" H 6500 4150 50  0000 C CNN
+F 2 "BreadboardController:SW_SMD" H 6500 4450 50  0001 C CNN
+F 3 "~" H 6500 4450 50  0001 C CNN
+	1    6500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E98E171
+P 6800 4250
+F 0 "#PWR04" H 6800 4000 50  0001 C CNN
+F 1 "GND" H 6805 4077 50  0000 C CNN
+F 2 "" H 6800 4250 50  0001 C CNN
+F 3 "" H 6800 4250 50  0001 C CNN
+	1    6800 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3500 6300 3500
+Wire Wire Line
+	6100 3750 6300 3750
+Wire Wire Line
+	6000 4000 6300 4000
+Wire Wire Line
+	5900 4250 6300 4250
+Wire Wire Line
+	6700 4250 6800 4250
+Wire Wire Line
+	6700 4000 6800 4000
+Wire Wire Line
+	6800 4000 6800 4250
+Wire Wire Line
+	6700 3750 6800 3750
+Wire Wire Line
+	6800 3750 6800 4000
+Connection ~ 6800 4000
+Wire Wire Line
+	6700 3500 6800 3500
+Wire Wire Line
+	6800 3500 6800 3750
+Connection ~ 6800 3750
+Connection ~ 6800 4250
+Text Label 5900 3450 3    50   ~ 0
+SW4
+Text Label 6000 3450 3    50   ~ 0
+SW3
+Text Label 6100 3450 3    50   ~ 0
+SW2
+Text Label 6200 3450 3    50   ~ 0
+SW1
+$Comp
+L power:VCC #PWR0101
+U 1 1 5F443D15
+P 5300 3300
+F 0 "#PWR0101" H 5300 3150 50  0001 C CNN
+F 1 "VCC" H 5317 3473 50  0000 C CNN
+F 2 "" H 5300 3300 50  0001 C CNN
+F 3 "" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
